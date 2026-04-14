@@ -1,7 +1,5 @@
 # Microfrontends — Conceptos Fundamentales
 
-> Este documento explica **por qué** existe cada pieza del proyecto antes de que toques código.
-> Leelo entero. Una vez. Vale la pena.
 
 ---
 
