@@ -1,0 +1,21 @@
+{
+  "name": "pokemon-store-microfrontends",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pokemon Store - Microfrontends with Module Federation",
+  "workspaces": [
+    "shell",
+    "mf-dashboard",
+    "mf-cart",
+    "mf-topbar"
+  ],
+  "scripts": {
+    "start:all": "concurrently -n shell,dashboard,cart,topbar -c blue,green,yellow,magenta \"npm run start --workspace=shell\" \"npm run start --workspace=mf-dashboard\" \"npm run start --workspace=mf-cart\" \"npm run start --workspace=mf-topbar\""
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
